@@ -17,3 +17,13 @@ export function getOrderedList() {
         "Ötödik elem"
     ];
 }
+
+let shoppingList = []; 
+
+export function getShoppingList() {
+    return shoppingList; 
+}
+
+export function addToShoppingList(item) {
+    shoppingList.push(item); 
+}
