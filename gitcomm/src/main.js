@@ -1,7 +1,6 @@
-import { getOrderedList, getUnorderedList } from './list'
+import { getOrderedList, getUnorderedList } from './list.js'
 
-
-export function displayLists() {
+function displayLists() {
     const ulList = getUnorderedList();
     const olList = getOrderedList();
 
@@ -25,3 +24,9 @@ export function displayLists() {
         olElement.appendChild(li);
     });
 }
+function init() {
+  displayLists();
+}
+
+
+document.addEventListener("DOMContentLoaded", init)
